@@ -25,7 +25,7 @@ def diabetes_prediction(input_data):
 def main():
     # Giving a title
     st.title('Diabetes Prediction Web App')
-
+    st.markdown("<span style='font-size: 20px;'><strong>By Sohel Ahmed</strong></span>", unsafe_allow_html=True)
     # Getting the input data from the user
     Pregnancies = st.text_input('Number of Pregnancies')
     Glucose = st.text_input('Glucose Level')
