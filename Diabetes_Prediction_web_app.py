@@ -4,8 +4,9 @@ import pickle
 import streamlit as st
 
 # Loading the saved model
-loaded_model = pickle.load(open('C:/Users/sohel/Dropbox/Ariana/Interview_Data/Python_model/Diabetes/trained_model.sav', 'rb'))
-
+#loaded_model = pickle.load(open('C:/Users/sohel/Dropbox/Ariana/Interview_Data/Python_model/Diabetes/trained_model.sav', 'rb'))
+with open("naive_bayes_model.pkl", "rb") as file:
+    loaded_model = pickle.load(file)
 # Creating a function for Prediction
 def diabetes_prediction(input_data):
     # Changing the input_data to numpy array
