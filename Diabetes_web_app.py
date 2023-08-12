@@ -30,7 +30,7 @@ def diabetes_prediction(input_data):
 def main():
     # Giving a title
     st.title('Diabetes Prediction Web App')
-    st.markdown("<span style='font-size: 20px;'><strong>By Sohel Ahmed</strong></span>", unsafe_allow_html=True)
+   
     image = Image.open("Diabetes.png")
     st.image(image, use_column_width=True)
     # Getting the input data from the user
